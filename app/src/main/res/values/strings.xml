@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirebaseApp</string>
+    <string name="already_account">Already Account?  <b><font color="#FFFFFF">Login</font></b></string>
+    <string name="no_account">No Account?  <b><font color="#FFFFFF">Register</font></b></string>
+</resources>

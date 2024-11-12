@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainactivit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="#010827">
+
+    <!-- Button Blog -->
+    <Button
+        android:id="@+id/blogButton"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:text="Go To Blog"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Card Layout -->
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blogButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card"
+        android:elevation="2dp">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/photo" />
+
+        <!-- Nama Card -->
+        <TextView
+            android:id="@+id/namaCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Thirdy Gayares"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Email Card -->
+        <TextView
+            android:id="@+id/emailCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="gayaresthird@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/emailNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="+639717433317"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!-- Action Buttons (Edit and Logout) -->
+    <RelativeLayout
+        android:id="@+id/action"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp">
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="4dp"
+            android:text="Edit"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:text="Logout"
+            android:backgroundTint="#D9190D"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+</RelativeLayout>
